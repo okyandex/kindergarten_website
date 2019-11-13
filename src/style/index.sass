@@ -1,0 +1,69 @@
+@import header
+@import variables
+
+
+body
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    background-color: #f3f3f3
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+// Top-section
+.top-section__wrapper
+    flex-wrap: wrap
+    margin-top: 5%
+    align-content: center
+    a
+        text-decoration: none
+.smart-kid__col
+    justify-content: center
+
+.top-section__text
+    flex-direction: column
+    justify-content: space-around
+    a
+        align-self: flex-start
+
+.smart-kid__img
+
+    width: 70%
+    height: auto
+
+//Our groups
+.our-groups
+    h2
+        text-align: center
+        margin-top: 5%
+        padding: 5% 0
+    
+
+.group__img
+    width: 100px
+    height: auto
+    margin: 0px 30px
+.our-groups__wrapper
+    flex-wrap: wrap
+    p
+        margin: 4px
+    .col-50
+        padding: 40px 0px
+        // margin-bottom: 40px
+        margin: 15px
+        width: calc(50% - 30px)
+        transition: .5s
+        &:hover
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+
+.group-text__wrapper
+    flex-direction: column
+ 
+
+@media screen and ( max-width:  560px)
+    .our-groups__wrapper
+        .col-50
+            width: calc(100% - 30px)
+    .top-section__wrapper
+        .col-50
+            width: calc(100%)
+    
