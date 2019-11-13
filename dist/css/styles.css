@@ -69,6 +69,11 @@
     font-size: 1.4rem;
     font-weight: 700; }
 
+.mob-menu__img {
+  display: none;
+  width: 48px;
+  margin-right: 5%; }
+
 .container {
   width: 1140px;
   margin: 0 auto; }
@@ -290,4 +295,6 @@ body {
     margin-bottom: 6rem; }
   footer .col-30 {
     width: calc(100%);
-    text-align: center; } }
+    text-align: center; }
+  .mob-menu__img {
+    display: block; } }
