@@ -1,3 +1,8 @@
+mixin scripts(scripts)
+	each name in scripts
+		- src = 'js/' + name;
+		script(src=src)
+
 <!DOCTYPE html>
 html(lang="en")
 head
@@ -74,3 +79,5 @@ body
 					img.values__img(src="../images/care.svg", alt="")
 					p.medium-text ЗАБОТА
 					p.small-text Ваш ребенок может спокойно находиться у нас круглосуточно.
+
+	+scripts(["main.js"])
