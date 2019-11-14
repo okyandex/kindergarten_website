@@ -190,6 +190,13 @@ body {
   background-color: #f3f3f3;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
+.top-section {
+  margin: 8% 0; }
+  .top-section h1 {
+    font-size: 2rem; }
+  .top-section p {
+    font-size: 1.2rem; }
+
 .top-section__wrapper {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -253,8 +260,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.our-values h2 {
-  text-align: center; }
+.our-values {
+  margin: 8% 0; }
+  .our-values h2 {
+    text-align: center; }
 
 .our-values__wrapper {
   -ms-flex-wrap: wrap;
@@ -279,22 +288,63 @@ body {
   body {
     font-size: 1.8rem; }
   .logo {
-    margin-left: 5%; }
+    margin-left: 5%;
+    width: 30%;
+    padding: 5% 0; }
+  .smart-kid__col {
+    margin-top: 4%; }
+  .mob-menu__img {
+    width: 10%; }
+  .top-section__text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .top-section__text h1 {
+      font-size: 220%; }
+    .top-section__text p {
+      font-size: 120%; }
+  .top-section__text .btn {
+    display: none; }
+  .top-section__text a {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 4% 0;
+    font-size: 120%; }
+  .top-section__wrapper {
+    margin-bottom: 14%; }
   .main-menu__list {
     display: none; }
-  .our-groups__wrapper .col-50 {
-    width: calc(100% - 30px);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 6rem; }
+  .our-groups h2 {
+    padding-top: 12%; }
+  .our-groups__wrapper {
+    margin-top: 10%; }
+    .our-groups__wrapper .col-50 {
+      width: calc(100% - 30px);
+      margin-left: 6rem;
+      margin-bottom: 6rem; }
+      .our-groups__wrapper .col-50:hover {
+        -webkit-box-shadow: none;
+                box-shadow: none; }
+  .group-text__wrapper p {
+    font-size: 160%; }
+  .group__img {
+    width: 20%;
+    margin-right: 6rem; }
   .top-section__wrapper .col-50 {
     width: calc(100%); }
+  .our-values h2 {
+    padding: 10% 0; }
   .values__i {
     width: calc(100% - 30px);
     margin-bottom: 6rem; }
-  footer .col-30 {
-    width: calc(100%);
-    text-align: center; }
+    .values__i .medium-text {
+      font-size: 200%; }
+    .values__i .small-text {
+      font-size: 120%; }
+  footer {
+    font-size: 120%; }
+    footer .col-30 {
+      width: calc(100%);
+      text-align: center; }
   .mob-menu__img {
     display: block; } }
