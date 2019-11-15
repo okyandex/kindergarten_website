@@ -4,132 +4,132 @@ mixin scripts(scripts)
 		script(src=src)
 
 <!DOCTYPE html>
-html(lang="en")
-head
-	meta(charset="UTF-8")
-	meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0")
-	title Развивающий детский сад "Умка"
-	link(rel="shortcut icon", href="../images/icons/favicon.ico", type="image/x-icon")
-	link(rel="stylesheet" type="text/css" href="./css/styles.min.css")
-body
-	include blocks/header
-	section.top-section
-		.container
-			.top-section__wrapper.d-flex
-				.col-50.top-section__text.d-flex
-					h1 Развивающий детсикй сад “Умка”
-					p Мы предлагаем уникальные программы развития ваших детей
-					a.btn.btn_green(href="") УЗНАТЬ БОЛЬШЕ
-				.col-50.smart-kid__col.d-flex
-					img.smart-kid__img(src="images/smart_kid.png", alt="")
-	section.bg-white.our-groups
-		.container
-			h2 НАШИ ГРУППЫ
-			.our-groups__wrapper.d-flex
-				.col-50.d-flex
-					img.group__img(src="images/icons/milk.svg", alt="")
-					.group-text__wrapper.d-flex
-						p.head-text ЯСЛИ
-						p.medium-text (1,5 - 2 лет)
-						p.small-text Группа для подрастающих
-				.col-50.d-flex
-					img.group__img(src="images/icons/bucket.svg", alt="")
-					.group-text__wrapper.d-flex
-						p.head-text ЯСЛИ +
-						p.medium-text (2 - 3 лет)
-						p.small-text Группа для самых любопытных
-				.col-50.d-flex
-					img.group__img(src="images/icons/pyramid.svg", alt="")
-					.group-text__wrapper.d-flex
-						p.head-text ДЕТСКИЙ САД
-						p.medium-text (3 - 4 лет)
-						p.small-text Группа для подрастающих
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0")
+		title Развивающий детский сад "Умка"
+		link(rel="shortcut icon", href="../images/icons/favicon.ico", type="image/x-icon")
+		link(rel="stylesheet" type="text/css" href="./css/styles.min.css")
+	body
+		include blocks/header
+		section.top-section
+			.container
+				.top-section__wrapper.d-flex
+					.col-50.top-section__text.d-flex
+						h1 Развивающий детсикй сад “Умка”
+						p Мы предлагаем уникальные программы развития ваших детей
+						a.btn.btn_green(href="") УЗНАТЬ БОЛЬШЕ
+					.col-50.smart-kid__col.d-flex
+						img.smart-kid__img(src="images/smart_kid.png", alt="")
+		section.bg-white.our-groups
+			.container
+				h2 НАШИ ГРУППЫ
+				.our-groups__wrapper.d-flex
+					.col-50.d-flex
+						img.group__img(src="images/icons/milk.svg", alt="")
+						.group-text__wrapper.d-flex
+							p.head-text ЯСЛИ
+							p.medium-text (1,5 - 2 лет)
+							p.small-text Группа для подрастающих
+					.col-50.d-flex
+						img.group__img(src="images/icons/bucket.svg", alt="")
+						.group-text__wrapper.d-flex
+							p.head-text ЯСЛИ +
+							p.medium-text (2 - 3 лет)
+							p.small-text Группа для самых любопытных
+					.col-50.d-flex
+						img.group__img(src="images/icons/pyramid.svg", alt="")
+						.group-text__wrapper.d-flex
+							p.head-text ДЕТСКИЙ САД
+							p.medium-text (3 - 4 лет)
+							p.small-text Группа для подрастающих
+					
+					.col-50.d-flex
+						img.group__img(src="images/icons/abc.svg", alt="")
+						.group-text__wrapper.d-flex
+							p.head-text ДОШКОЛЬНАЯ
+							p.medium-text (4 - 6 лет)
+							p.small-text Группа для самых взрослых
+
+		section.our-values
+			.container
+				h2 НАШИ ЦЕННОСТИ
+				.our-values__wrapper.d-flex
+					.col-30.values__i.d-flex
+						img.values__img(src="images/apple.svg", alt="")
+						p.medium-text ЗДОРОВОЕ ПИТАНИЕ
+						p.small-text Только самая свежая и вкусная еда для ваших детей
+					.col-30.values__i.d-flex
+						img.values__img(src="images/shield.svg", alt="")
+						p.medium-text БЕЗОПАСНОСТЬ
+						p.small-text Охранная систмема. Круглосуточное видеонаблюдение.
+					.col-30.values__i.d-flex
+						img.values__img(src="images/house.svg", alt="")
+						p.medium-text ИНТЕРЬЕР
+						p.small-text Мы создали интерьер, подходящий для развития ваших детей.
+					.col-30.values__i.d-flex
+						img.values__img(src="images/case.svg", alt="")
+						p.medium-text МЕДСЛУЖБА
+						p.small-text Собственная служба медицины. Психолог, педиатор.
+					.col-30.values__i.d-flex
+						img.values__img(src="images/atom.svg", alt="")
+						p.medium-text РАЗВИТИЕ
+						p.small-text Уникальные программы развития, созданные лучшими педагогами.
+					.col-30.values__i.d-flex
+						img.values__img(src="images/care.svg", alt="")
+						p.medium-text ЗАБОТА
+						p.small-text Ваш ребенок может спокойно находиться у нас круглосуточно.
+
+		section.events-section.bg-white    
+			.container.bg-white
+				h2 СОБЫТИЯ
+				.event__item.d-flex.col-50
+					.event__title-row
+						p.event__name День рождения “Умки”
+						p.event__date 3 ноября 10:00 - 16:00
+					.event__description Конкурсы, подарки, торт, развлекательные программы. Костюмитрованное шоу. Отмечаем все вместе.
+					img.event__img(src="images/kids-party.png", alt="")
+
+				.event__item.d-flex.col-50
+					.event__title-row
+						p.event__name День здоровья
+						p.event__date 20 ноября 11:00 - 15:00
+					.event__description Занимаемся спортом, рассказываем детям о важности сохранения здоровья. Учавствют все группы детей.
+					img.event__img(src="images/yoga-kid.png", alt="")
+				.event__item.d-flex.col-50
+					.event__title-row
+						p.event__name День воспитателя 
+						p.event__date 27 сентября  10:00 - 15:00
+					.event__description Сегодня воспитанники нашего детского сада, а также их родители сердечно поздравляют всех работников детского сада с праздником! И дарят Вам праздничный концерт!
+					img.event__img(src="images/teacher-day.png", alt="")
+
+		section.review-section
+			.container
+				h2 ОТЗЫВЫ
+				.review__item.d-flex.col-50
+					img.review__img(src="images/parent-1.png", alt="")
+					.review__title-row
+						p.review__name Мария Иванова
+						p.review__child сын Даниил, 4 года
+					.review__text Хоть мы живем и далеко от сада, но очень рады что попали именно в него. новый красивый сад, прекрасная добрая заведующая, повара просто волшебники, сын теперь просит борщ "как в садике...". и конечно же наша воспитатель Василенко Светлана Федоровна - это наша волшебница.  сколько же энергии у этого доброго, отзывчивого человека. ни минуты она не сидит, все время что то выдумывает и занимается с детьми.
+				.review__item.d-flex.col-50
+					img.review__img(src="images/parent-2.png", alt="")
+					.review__title-row
+						p.review__name Пётр Смирнов
+						p.review__child сын Кирилл, 3 года
+					.review__text Прекрасная организация занятий, высококвалифицированные и внимательные воспитатели, великолепная профессиональная актерская подготовка к праздникам и детей, и педсостава, уютная атмосфера, чистота, прекрасное питание, ребенок, который идет в садик с настоящим удовольствием – это главные показатели уровня нашего детского сада.
+				.review__item.d-flex.col-50
+					img.review__img(src="images/parent-3.png", alt="")
+					.review__title-row
+						p.review__name Евгения Казакова
+						p.review__child дочь Милана, 4 года
+					.review__text Спасибо воспитателям и всем сотрудникам детского сада "Умка" за прекрасное воспитание наших детей и заботу о них! Всегда приятно ощущать искреннюю заботу и ответственность. А организация праздника выше всяких похвал - это просто чудо!
+
+
 				
-				.col-50.d-flex
-					img.group__img(src="images/icons/abc.svg", alt="")
-					.group-text__wrapper.d-flex
-						p.head-text ДОШКОЛЬНАЯ
-						p.medium-text (4 - 6 лет)
-						p.small-text Группа для самых взрослых
 
-	section.our-values
-		.container
-			h2 НАШИ ЦЕННОСТИ
-			.our-values__wrapper.d-flex
-				.col-30.values__i.d-flex
-					img.values__img(src="images/apple.svg", alt="")
-					p.medium-text ЗДОРОВОЕ ПИТАНИЕ
-					p.small-text Только самая свежая и вкусная еда для ваших детей
-				.col-30.values__i.d-flex
-					img.values__img(src="images/shield.svg", alt="")
-					p.medium-text БЕЗОПАСНОСТЬ
-					p.small-text Охранная систмема. Круглосуточное видеонаблюдение.
-				.col-30.values__i.d-flex
-					img.values__img(src="images/house.svg", alt="")
-					p.medium-text ИНТЕРЬЕР
-					p.small-text Мы создали интерьер, подходящий для развития ваших детей.
-				.col-30.values__i.d-flex
-					img.values__img(src="images/case.svg", alt="")
-					p.medium-text МЕДСЛУЖБА
-					p.small-text Собственная служба медицины. Психолог, педиатор.
-				.col-30.values__i.d-flex
-					img.values__img(src="images/atom.svg", alt="")
-					p.medium-text РАЗВИТИЕ
-					p.small-text Уникальные программы развития, созданные лучшими педагогами.
-				.col-30.values__i.d-flex
-					img.values__img(src="images/care.svg", alt="")
-					p.medium-text ЗАБОТА
-					p.small-text Ваш ребенок может спокойно находиться у нас круглосуточно.
+		
+		include blocks/footer
 
-	section.events-section.bg-white    
-		.container.bg-white
-			h2 СОБЫТИЯ
-			.event__item.d-flex.col-50
-				.event__title-row
-					p.event__name День рождения “Умки”
-					p.event__date 3 ноября 10:00 - 16:00
-				.event__description Конкурсы, подарки, торт, развлекательные программы. Костюмитрованное шоу. Отмечаем все вместе.
-				img.event__img(src="images/kids-party.png", alt="")
-
-			.event__item.d-flex.col-50
-				.event__title-row
-					p.event__name День здоровья
-					p.event__date 20 ноября 11:00 - 15:00
-				.event__description Занимаемся спортом, рассказываем детям о важности сохранения здоровья. Учавствют все группы детей.
-				img.event__img(src="images/yoga-kid.png", alt="")
-			.event__item.d-flex.col-50
-				.event__title-row
-					p.event__name День воспитателя 
-					p.event__date 27 сентября  10:00 - 15:00
-				.event__description Сегодня воспитанники нашего детского сада, а также их родители сердечно поздравляют всех работников детского сада с праздником! И дарят Вам праздничный концерт!
-				img.event__img(src="images/teacher-day.png", alt="")
-
-	section.review-section
-		.container
-			h2 ОТЗЫВЫ
-			.review__item.d-flex.col-50
-				img.review__img(src="images/parent-1.png", alt="")
-				.review__title-row
-					p.review__name Мария Иванова
-					p.review__child сын Даниил, 4 года
-				.review__text Хоть мы живем и далеко от сада, но очень рады что попали именно в него. новый красивый сад, прекрасная добрая заведующая, повара просто волшебники, сын теперь просит борщ "как в садике...". и конечно же наша воспитатель Василенко Светлана Федоровна - это наша волшебница.  сколько же энергии у этого доброго, отзывчивого человека. ни минуты она не сидит, все время что то выдумывает и занимается с детьми.
-			.review__item.d-flex.col-50
-				img.review__img(src="images/parent-2.png", alt="")
-				.review__title-row
-					p.review__name Пётр Смирнов
-					p.review__child сын Кирилл, 3 года
-				.review__text Прекрасная организация занятий, высококвалифицированные и внимательные воспитатели, великолепная профессиональная актерская подготовка к праздникам и детей, и педсостава, уютная атмосфера, чистота, прекрасное питание, ребенок, который идет в садик с настоящим удовольствием – это главные показатели уровня нашего детского сада.
-			.review__item.d-flex.col-50
-				img.review__img(src="images/parent-3.png", alt="")
-				.review__title-row
-					p.review__name Евгения Казакова
-					p.review__child дочь Милана, 4 года
-				.review__text Спасибо воспитателям и всем сотрудникам детского сада "Умка" за прекрасное воспитание наших детей и заботу о них! Всегда приятно ощущать искреннюю заботу и ответственность. А организация праздника выше всяких похвал - это просто чудо!
-
-
-			
-
-	
-	include blocks/footer
-
-	+scripts(["jquery.min.js", "main.js"]) 
+		+scripts(["jquery.min.js", "main.js"]) 
