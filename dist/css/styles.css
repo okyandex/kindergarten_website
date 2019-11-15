@@ -311,6 +311,32 @@ body {
   .event__item .event__img {
     margin-top: 20%; }
 
+.review-section {
+  padding-bottom: 5%; }
+  .review-section h2 {
+    text-align: center;
+    margin-bottom: 10%;
+    padding-top: 10%; }
+
+.review__item {
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center; }
+  .review__item .review__title-row {
+    line-height: 0;
+    margin-bottom: 5%; }
+  .review__item .review__name {
+    font-size: 140%; }
+  .review__item .review__child {
+    font-size: 90%; }
+  .review__item .review__text {
+    font-weight: 100; }
+  .review__item .review__img {
+    margin-bottom: 2%; }
+
 @media screen and (max-width: 560px) {
   body {
     font-size: 1.8rem; }
