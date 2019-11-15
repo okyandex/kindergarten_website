@@ -183,6 +183,7 @@ footer {
   font-weight: 200; }
 
 body {
+  color: #212121;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -196,6 +197,13 @@ body {
     font-size: 2rem; }
   .top-section p {
     font-size: 1.2rem; }
+  .top-section .btn {
+    border: 1px solid #61C0BF;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    .top-section .btn:hover {
+      background-color: #f3f3f3;
+      color: #61C0BF; }
 
 .top-section__wrapper {
   -ms-flex-wrap: wrap;

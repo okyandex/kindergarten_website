@@ -5,6 +5,7 @@
 
 
 body
+    color: #212121
     box-sizing: border-box
     margin: 0
     padding: 0
@@ -19,6 +20,12 @@ body
         font-size: 2rem
     p
         font-size: 1.2rem
+    .btn
+        border: 1px solid $green
+        transition: .3s
+        &:hover
+            background-color: #f3f3f3
+            color: $green
 .top-section__wrapper
     flex-wrap: wrap
     margin-top: 5%
