@@ -15,7 +15,8 @@ body
 
 // Top-section
 .top-section
-    margin: 8% 0
+    margin-bottom: 8%
+    margin-top: 14%
     h1
         font-size: 2rem
     p
@@ -145,9 +146,14 @@ body
         margin-bottom: 2%
 
 // Media queries
-@media screen and ( max-width:  560px)
+@media screen and ( max-width:  768px)
     body
         font-size: 1.8rem
+    body.lock
+        overflow: hidden
+    .top-section
+        margin-bottom: 8%
+        margin-top: 80%
     .logo
         margin-left: 5%
         width: 30%
@@ -171,8 +177,8 @@ body
             font-size: 120%
     .top-section__wrapper
         margin-bottom: 14%
-    .main-menu__list
-        display: none
+    // .main-menu__list
+    //     display: none
     .our-groups
         h2
             padding-top: 12%
@@ -212,4 +218,67 @@ body
             text-align: center
     .mob-menu__img
         display: block
+    .header__burger
+        position: relative
+        margin-right: 5%
+        z-index: 3
+        width: 120px
+        height: 80px
+        
+        &::after, &::before
+            content: ''
+            background-color: #212121
+            position: absolute
+            width: 100%
+            height: 4px
+            left: 0
+            transition: all 0.3s ease 0s
+        &::before
+            top: 0
+        &::after
+            bottom: 0
+        span
+            background-color: #212121
+            position: absolute
+            left: 0
+            top: 39px
+            width: 100%
+            height: 4px
+            transition: all 0.3s ease 0s
+            
+
+
+    .header__burger.active
+        &::before
+            transform: rotate(45deg)
+            top: 38px
+        &::after
+            transform: rotate(-45deg)
+            bottom: 38px      
+        span
+            transform: scale(0)
+
+    .main-menu
+        position: fixed
+        top: -100%
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: white
+        color: white
+        padding: 280px 0px 0px 0px
+        transition: all 0.3s ease 0s
+        
+
+        .main-menu__list
+            display: block
+            li
+                margin: 10px 0 20px 0
+                a
+                    font-size: 300%
+    .main-menu.active
+        top: 0
+
+            
+         
     
