@@ -46,7 +46,8 @@
   top: 0;
   left: 0;
   background-color: #fff;
-  min-width: 100%; }
+  min-width: 100%;
+  z-index: 3; }
   .main-header::before {
     content: '';
     position: absolute;
