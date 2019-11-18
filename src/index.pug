@@ -11,6 +11,8 @@ html(lang="ru")
 		title Развивающий детский сад "Умка"
 		link(rel="shortcut icon", href="../images/icons/fav.png", type="image/x-icon")
 		link(rel="stylesheet" type="text/css" href="./css/styles.min.css")
+		//- link(rel="stylesheet", href="node_modules/@glidejs/glide/dist/css/glide.core.min.css")
+		//- link(rel="stylesheet", href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css")
 	body
 		include blocks/header
 		section.top-section
@@ -107,29 +109,30 @@ html(lang="ru")
 		section.review-section
 			.container
 				h2 ОТЗЫВЫ
-				.review__item.d-flex.col-50
-					img.review__img(src="images/parent-1.png", alt="")
-					.review__title-row
-						p.review__name Мария Иванова
-						p.review__child сын Даниил, 4 года
-					.review__text Хоть мы живем и далеко от сада, но очень рады что попали именно в него. новый красивый сад, прекрасная добрая заведующая, повара просто волшебники, сын теперь просит борщ "как в садике...". и конечно же наша воспитатель Василенко Светлана Федоровна - это наша волшебница.  сколько же энергии у этого доброго, отзывчивого человека. ни минуты она не сидит, все время что то выдумывает и занимается с детьми.
-				.review__item.d-flex.col-50
-					img.review__img(src="images/parent-2.png", alt="")
-					.review__title-row
-						p.review__name Пётр Смирнов
-						p.review__child сын Кирилл, 3 года
-					.review__text Прекрасная организация занятий, высококвалифицированные и внимательные воспитатели, великолепная профессиональная актерская подготовка к праздникам и детей, и педсостава, уютная атмосфера, чистота, прекрасное питание, ребенок, который идет в садик с настоящим удовольствием – это главные показатели уровня нашего детского сада.
-				.review__item.d-flex.col-50
-					img.review__img(src="images/parent-3.png", alt="")
-					.review__title-row
-						p.review__name Евгения Казакова
-						p.review__child дочь Милана, 4 года
-					.review__text Спасибо воспитателям и всем сотрудникам детского сада "Умка" за прекрасное воспитание наших детей и заботу о них! Всегда приятно ощущать искреннюю заботу и ответственность. А организация праздника выше всяких похвал - это просто чудо!
-
-
-				
+				.glide
+					.glide__track(data-glide-el="track")
+						.glide__slides
+							.review__item.d-flex.glide__slide
+								img.review__img(src="images/parent-1.png", alt="")
+								.review__title-row
+									p.review__name Мария Иванова
+									p.review__child сын Даниил, 4 года
+								.review__text Хоть мы живем и далеко от сада, но очень рады что попали именно в него. новый красивый сад, прекрасная добрая заведующая, повара просто волшебники, сын теперь просит борщ "как в садике...". и конечно же наша воспитатель Василенко Светлана Федоровна - это наша волшебница.  сколько же энергии у этого доброго, отзывчивого человека. ни минуты она не сидит, все время что то выдумывает и занимается с детьми.
+							.review__item.d-flex.glide__slide
+								img.review__img(src="images/parent-2.png", alt="")
+								.review__title-row
+									p.review__name Пётр Смирнов
+									p.review__child сын Кирилл, 3 года
+								.review__text Прекрасная организация занятий, высококвалифицированные и внимательные воспитатели, великолепная профессиональная актерская подготовка к праздникам и детей, и педсостава, уютная атмосфера, чистота, прекрасное питание, ребенок, который идет в садик с настоящим удовольствием – это главные показатели уровня нашего детского сада.
+							.review__item.d-flex.glide__slide
+								img.review__img(src="images/parent-3.png", alt="")
+								.review__title-row
+									p.review__name Евгения Казакова
+									p.review__child дочь Милана, 4 года
+								.review__text Спасибо воспитателям и всем сотрудникам детского сада "Умка" за прекрасное воспитание наших детей и заботу о них! Всегда приятно ощущать искреннюю заботу и ответственность. А организация праздника выше всяких похвал - это просто чудо!
 
 		
 		include blocks/footer
 
-		+scripts(["jquery.min.js", "main.js"]) 
+		+scripts(["jquery.min.js", "glide.min.js", "main.js"])
+		

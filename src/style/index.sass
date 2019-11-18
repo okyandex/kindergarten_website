@@ -4,6 +4,8 @@
 @import common
 @import about
 @import media
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core"
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme"
 
 
 body
@@ -386,7 +388,15 @@ body
             transition: all 0.3s ease 0s
             
 
-
+    .review__item
+        // padding: 0 5%
+        font-size: 200%
+        .review__img
+            width: 90%
+            align-self: center
+        .review__text
+            text-align: left
+            padding: 0 5%
     .header__burger.active
         &::before
             transform: rotate(45deg)
