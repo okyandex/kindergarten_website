@@ -262,6 +262,34 @@ footer {
         .about-values .about-values_wrapper .about-values__item .about__item__icon img {
           width: 64px; }
 
+.about-staff {
+  margin-bottom: 10%; }
+
+.about-staff__title {
+  margin-top: 10%;
+  font-size: 200%;
+  margin-bottom: 4%; }
+
+.about-staff__item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%; }
+  .about-staff__item .about-staff__name {
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 1.4em; }
+  .about-staff__item .about-staff__position {
+    font-weight: 100;
+    margin-bottom: 10%; }
+
 body {
   color: #212121;
   -webkit-box-sizing: border-box;
