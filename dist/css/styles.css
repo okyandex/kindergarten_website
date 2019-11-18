@@ -290,6 +290,16 @@ footer {
     font-weight: 100;
     margin-bottom: 10%; }
 
+.partner__title {
+  font-size: 200%; }
+
+.partners__row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 body {
   color: #212121;
   -webkit-box-sizing: border-box;
@@ -600,4 +610,14 @@ body {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+  .partner__title {
+    text-align: center; }
+  .partner__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
