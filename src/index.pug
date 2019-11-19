@@ -11,8 +11,7 @@ html(lang="ru")
 		title Развивающий детский сад "Умка"
 		link(rel="shortcut icon", href="../images/icons/fav.png", type="image/x-icon")
 		link(rel="stylesheet" type="text/css" href="./css/styles.min.css")
-		//- link(rel="stylesheet", href="node_modules/@glidejs/glide/dist/css/glide.core.min.css")
-		//- link(rel="stylesheet", href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css")
+
 	body
 		include blocks/header
 		section.top-section
@@ -86,25 +85,29 @@ html(lang="ru")
 		section.events-section.bg-white    
 			.container.bg-white
 				h2 СОБЫТИЯ
-				.event__item.d-flex.col-50
-					.event__title-row
-						p.event__name День рождения “Умки”
-						p.event__date 3 ноября 10:00 - 16:00
-					.event__description Конкурсы, подарки, торт, развлекательные программы. Костюмитрованное шоу. Отмечаем все вместе.
-					img.event__img(src="images/kids-party.png", alt="")
+				.glide
+					.glide__track(data-glide-el="track")
+						.glide__slides
 
-				.event__item.d-flex.col-50
-					.event__title-row
-						p.event__name День здоровья
-						p.event__date 20 ноября 11:00 - 15:00
-					.event__description Занимаемся спортом, рассказываем детям о важности сохранения здоровья. Учавствют все группы детей.
-					img.event__img(src="images/yoga-kid.png", alt="")
-				.event__item.d-flex.col-50
-					.event__title-row
-						p.event__name День воспитателя 
-						p.event__date 27 сентября  10:00 - 15:00
-					.event__description Сегодня воспитанники нашего детского сада, а также их родители сердечно поздравляют всех работников детского сада с праздником! И дарят Вам праздничный концерт!
-					img.event__img(src="images/teacher-day.png", alt="")
+							.event__item.d-flex.glide__slide
+								.event__title-row
+									p.event__name День рождения “Умки”
+									p.event__date 3 ноября 10:00 - 16:00
+								.event__description Конкурсы, подарки, торт, развлекательные программы. Костюмитрованное шоу. Отмечаем все вместе.
+								img.event__img(src="images/kids-party.png", alt="")
+
+							.event__item.d-flex.glide__slide
+								.event__title-row
+									p.event__name День здоровья
+									p.event__date 20 ноября 11:00 - 15:00
+								.event__description Занимаемся спортом, рассказываем детям о важности сохранения здоровья. Учавствют все группы детей.
+								img.event__img(src="images/yoga-kid.png", alt="")
+							.event__item.d-flex.glide__slide
+								.event__title-row
+									p.event__name День воспитателя 
+									p.event__date 27 сентября  10:00 - 15:00
+								.event__description Сегодня воспитанники нашего детского сада, а также их родители сердечно поздравляют всех работников детского сада с праздником! И дарят Вам праздничный концерт!
+								img.event__img(src="images/teacher-day.png", alt="")
 
 		section.review-section
 			.container
