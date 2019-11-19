@@ -200,6 +200,34 @@ footer {
   font-size: 1rem;
   font-weight: 200; }
 
+.programms-info {
+  margin-top: 10%; }
+  .programms-info h1 {
+    font-size: 200%; }
+
+.programm-item {
+  -webkit-box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  margin: 3% 0; }
+  .programm-item .programm__description {
+    font-size: 80%; }
+  .programm-item .programm-item__info {
+    margin-top: 5%;
+    padding: 10%; }
+
+@media screen and (max-width: 768px) {
+  .programm-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .programm-item__img {
+    -ms-flex-item-align: center;
+        align-self: center; } }
+
 .story-section {
   margin-top: 10%;
   margin-bottom: 5%; }
