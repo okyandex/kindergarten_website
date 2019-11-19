@@ -53,33 +53,29 @@ html(lang="ru")
 				.about-staff__title Встречайте нашу команду
 				p.about-staff__info Все наши сотрудники прошли обучение в лучших учебных заведениях России и Европы.
 				p.about-staff__info Мы грамотно сочетаем опыт и применяем современные методы обучения.
+				.glide
+					.glide__track(data-glide-el="track")
+						.glide__slides
+							.about-staff__item.d-flex.glide__slide
+								.about-staff__photo
+									img(src="images/about-staff-1.png", alt="")
+								.about-staff__name Краснова Ирина Сергеевна
+								.about-staff__position Воспитатель младших групп
+								.about-staff__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tempora!
+							.about-staff__item.d-flex.glide__slide
+								.about-staff__photo
+									img(src="images/about-staff-2.png", alt="")
+								.about-staff__name Смолова Юлия Андреевна
+								.about-staff__position Воспитатель детского сада
+								.about-staff__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, modi?
 
-				.about-staff__item.d-flex
-					.about-staff__photo
-						img(src="images/about-staff-1.png", alt="")
-					.about-staff__name Краснова Ирина Сергеевна
-					.about-staff__position Воспитатель младших групп
-					.about-staff__description Более 10 лет воспитывает детей младшего возраста в “Умке”. Во время обучения проходила стажировку в Европейском центре воспитания детей в г. Утрехт (Нидерланды).
-				.about-staff__item.d-flex
-					.about-staff__photo
-						img(src="images/about-staff-2.png", alt="")
-					.about-staff__name Смолова Юлия Андреевна
-					.about-staff__position Воспитатель детского сада
-					.about-staff__description Более 10 лет воспитывает детей младшего возраста в “Умке”. Во время обучения проходила стажировку в Европейском центре воспитания детей в г. Утрехт (Нидерланды).
+							.about-staff__item.d-flex.glide__slide
+								.about-staff__photo
+									img(src="images/about-staff-3.png", alt="")
+								.about-staff__name Белова Ольга Юрьевна
+								.about-staff__position Воспитатель дополнительных программ
+								.about-staff__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, modi?
 
-				.about-staff__item.d-flex
-					.about-staff__photo
-						img(src="images/about-staff-3.png", alt="")
-					.about-staff__name Белова Ольга Юрьевна
-					.about-staff__position Воспитатель дополнительных программ
-					.about-staff__description Более 10 лет воспитывает детей младшего возраста в “Умке”. Во время обучения проходила стажировку в Европейском центре воспитания детей в г. Утрехт (Нидерланды).
-
-		section.interior-section
-			.container
-				.interior-photo
-					img(src="images/interior-1.png", alt="")
-				.interior-photo
-					img(src="images/interior-2.png", alt="")
 
 		section.patnters-section
 			.container
@@ -96,4 +92,4 @@ html(lang="ru")
 
 
 		include blocks/footer
-		+scripts(["jquery.min.js", "main.js"]) 
+		+scripts(["jquery.min.js", "glide.min.js", "main.js"]) 
