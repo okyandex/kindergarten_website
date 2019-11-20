@@ -201,15 +201,18 @@ footer {
   font-weight: 200; }
 
 .programms-info {
-  margin-top: 10%; }
-  .programms-info h1 {
-    font-size: 200%; }
+  margin-top: 15%;
+  margin-bottom: 10%; }
+  .programms-info h1, .programms-info p {
+    padding: 0 10%;
+    font-size: 150%; }
 
 .programm-item {
   -webkit-box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.15);
   background-color: #fff;
-  margin: 3% 0; }
+  margin: 3% 0;
+  font-size: 150%; }
   .programm-item .programm__description {
     font-size: 80%; }
   .programm-item .programm-item__info {
@@ -217,7 +220,14 @@ footer {
     padding: 10%; }
 
 @media screen and (max-width: 768px) {
+  .programms-info {
+    margin: 80% 0; }
+    .programms-info p, .programms-info h1 {
+      font-size: 150%;
+      padding: 0 10%; }
   .programm-item {
+    font-size: 160%;
+    padding-top: 10%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

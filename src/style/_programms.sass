@@ -1,12 +1,15 @@
 .programms-info
-	margin-top: 10%
-	h1
-		font-size: 200%
+	margin-top: 15%
+	margin-bottom: 10%
+	h1,p
+		padding: 0 10%
+		font-size: 150%
 
 .programm-item
 	box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.15);
 	background-color: #fff
 	margin: 3% 0
+	font-size: 150%
 	.programm__description
 		font-size: 80%
 	.programm-item__info
@@ -15,7 +18,14 @@
 
 
 @media screen and ( max-width:  768px)
+	.programms-info
+		margin: 80% 0
+		p, h1
+			font-size: 150%
+			padding: 0 10%
 	.programm-item
+		font-size: 160%
+		padding-top: 10%
 		flex-direction: column
 		box-shadow: none
 	.programm-item__img
