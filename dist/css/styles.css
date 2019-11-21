@@ -346,6 +346,56 @@ footer {
     .partners__row .partner__img img {
       width: 100%; }
 
+.groups-title {
+  margin: 15% 0;
+  text-align: center; }
+
+.groups__item .groups__info {
+  padding: 12% 8%; }
+
+.info-col {
+  background-color: #61C0BF;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.info__item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 108%;
+  padding: 0 7%; }
+  .info__item .__number {
+    font-size: 250%;
+    font-weight: bold; }
+  .info__item .__subject {
+    font-size: 200%; }
+  .info__item .__extra {
+    font-size: 90%;
+    font-weight: 100; }
+
+@media screen and (max-width: 768px) {
+  .groups-title {
+    margin-top: 30%; }
+  .groups-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .info__item {
+    margin-bottom: 10%; }
+  .groups__item {
+    margin: 0 5%; } }
+
 .glide {
   position: relative;
   width: 100%;

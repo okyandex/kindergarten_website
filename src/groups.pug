@@ -1,0 +1,68 @@
+mixin scripts(scripts)
+	each name in scripts
+		- src = 'js/' + name;
+		script(src=src)
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, maximum-scale=1.0")
+		title Развивающий детский сад "Умка"
+		link(rel="shortcut icon", href="../images/icons/fav.png", type="image/x-icon")
+		link(rel="stylesheet" type="text/css" href="./css/styles.min.css")
+	body
+		include blocks/header
+		.container
+			.groups-title
+				h1 Наши возрастные группы
+		.container
+			.groups-wrapper.d-flex
+				.groups-col
+					.groups__item.d-flex
+						.groups__photo
+							img(src="images/yasli.png", alt="")
+						.groups__info
+							.__title Ясли (1,5 - 2 лет)
+							.__description Наша учебная программа для малышей придает большое значение развитию самосознания посредством воспитания руководства и исследования.
+					.groups__item.d-flex
+						.groups__photo
+							img(src="images/yasli-plus.png", alt="")
+						.groups__info
+							.__title Ясли + (2 - 3  лет)
+							.__description Наша учебная программа для малышей придает большое значение развитию самосознания посредством воспитания руководства и исследования.
+					.groups__item.d-flex
+						.groups__photo
+							img(src="images/kindergarten.png", alt="")
+						.groups__info
+							.__title Детский сад (3 - 4 лет)
+							.__description Детский сад - волнующее и важное время для детей. Это время, чтобы развивать их врожденную любовь к изучению и любопытство к миру.
+					.groups__item.d-flex
+						.groups__photo
+							img(src="images/preschool.png", alt="")
+						.groups__info
+							.__title Дошколная (4 - 5 лет)
+							.__description Дошкольная программа обеспечивает полную подготовку детей для поступления как в обычные школы, так и в школы с углубленным изучением разнообразных предметов.
+
+
+
+
+
+				.info-col.d-flex
+					h2 УМКА
+					.info__item.d-flex
+						.__number 300 +
+						.__subject детей
+						.__extra воспитано в нашем саду
+					.info__item.d-flex
+						.__number 16
+						.__subject воспитателей
+						.__extra для разных групп
+					.info__item.d-flex
+						.__number 24/7
+						.__subject мы заботимся
+						.__extra о ваших детях круглосуточно
+
+
+		include blocks/footer
+		+scripts(["jquery.min.js", "glide.min.js", "main.js"]) 
