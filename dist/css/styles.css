@@ -211,13 +211,12 @@ footer {
   -webkit-box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.15);
   background-color: #fff;
-  margin: 3% 0;
-  font-size: 150%; }
-  .programm-item .programm__description {
-    font-size: 80%; }
+  margin: 3% 0; }
+  .programm-item .programm__title {
+    font-size: 150%; }
   .programm-item .programm-item__info {
     margin-top: 5%;
-    padding: 10%; }
+    padding: 7%; }
 
 @media screen and (max-width: 768px) {
   .programms-info {
