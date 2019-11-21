@@ -9,12 +9,13 @@
 	// 	width: 30%
 
 .groups__item
+	background-color: white
 	.groups__photo
 	.groups__info
 		padding: 12% 8%
 
 .info-col
-	background-color: $green
+	background-color: #3BB0B8
 	color: white
 	flex-direction: column
 	align-items: center
@@ -23,7 +24,7 @@
 	flex-direction: column
 	align-items: center
 	margin-bottom: 108%
-	padding: 0 7%
+	padding: 0 8%
 	.__number
 		font-size: 250%
 		font-weight: bold
@@ -34,9 +35,38 @@
 		font-weight: 100
 
 
+.excursion__block
+	flex-direction: column
+	align-items: center
+	background-color: #61C0BF
+	height: 100%
+
+
+.excursion__text
+	font-weight: 100
+	font-size: 140%
+	text-align: center
+	margin-bottom: 15%
+	margin-top: 30%
+
+.excursion__input
+	height: 40px
+	width: 200px
+	// width: 100%
+	// height: 20%
+	border: none
+	margin-bottom: 10%
+.excursion__btn
+	width: 200px
+	// height: 20%
+	// width: 100%
+	border: 1px solid white
+	&:hover
+		cursor: pointer
 @media screen and ( max-width:  768px)
 	.groups-title
 		margin-top: 30%
+
 	.groups-wrapper
 		flex-direction: column
 	.info__item
@@ -44,3 +74,8 @@
 
 	.groups__item
 		margin: 0 5%
+	.excursion__block
+		width: 100%
+		font-size: 220%
+	.excursion__btn
+		width: 50%

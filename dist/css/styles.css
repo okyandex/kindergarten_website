@@ -350,11 +350,13 @@ footer {
   margin: 15% 0;
   text-align: center; }
 
-.groups__item .groups__info {
-  padding: 12% 8%; }
+.groups__item {
+  background-color: white; }
+  .groups__item .groups__info {
+    padding: 12% 8%; }
 
 .info-col {
-  background-color: #61C0BF;
+  background-color: #3BB0B8;
   color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -373,7 +375,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 108%;
-  padding: 0 7%; }
+  padding: 0 8%; }
   .info__item .__number {
     font-size: 250%;
     font-weight: bold; }
@@ -382,6 +384,36 @@ footer {
   .info__item .__extra {
     font-size: 90%;
     font-weight: 100; }
+
+.excursion__block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #61C0BF;
+  height: 100%; }
+
+.excursion__text {
+  font-weight: 100;
+  font-size: 140%;
+  text-align: center;
+  margin-bottom: 15%;
+  margin-top: 30%; }
+
+.excursion__input {
+  height: 40px;
+  width: 200px;
+  border: none;
+  margin-bottom: 10%; }
+
+.excursion__btn {
+  width: 200px;
+  border: 1px solid white; }
+  .excursion__btn:hover {
+    cursor: pointer; }
 
 @media screen and (max-width: 768px) {
   .groups-title {
@@ -394,7 +426,12 @@ footer {
   .info__item {
     margin-bottom: 10%; }
   .groups__item {
-    margin: 0 5%; } }
+    margin: 0 5%; }
+  .excursion__block {
+    width: 100%;
+    font-size: 220%; }
+  .excursion__btn {
+    width: 50%; } }
 
 .glide {
   position: relative;
