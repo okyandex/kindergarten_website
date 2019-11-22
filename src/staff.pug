@@ -1,0 +1,86 @@
+mixin scripts(scripts)
+	each name in scripts
+		- src = 'js/' + name;
+		script(src=src)
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, maximum-scale=1.0")
+		title Развивающий детский сад "Умка"
+		link(rel="shortcut icon", href="../images/icons/fav.png", type="image/x-icon")
+		link(rel="stylesheet" type="text/css" href="./css/styles.min.css")
+	body
+		include blocks/header
+		.staff-title.container
+			h1 Наш персонал
+		.staff-wrapper.container
+			.staff-item.d-flex
+				.staff-info
+					.staff-name Наседкина Наталия Алексеевна
+					.staff-position Заведующая детским садом
+					.staff-phone +7 999 569 88 99
+					.staff-mail natalinasedkina@mail.ru
+				.staff-photo
+					img(src="images/staff-1.png", alt="")
+
+			.staff-item.d-flex
+				.staff-info.reverse
+					.staff-name Кравец Татьяна Михайловна
+					.staff-position Детский психолог
+					.staff-phone +7 968 635 55 45
+					.staff-mail psyhoymka@mail.ru
+				.staff-photo
+					img(src="images/staff-2.png", alt="")
+			.staff-item.d-flex
+				.staff-info
+					.staff-name Родионова Мария Петровна
+					.staff-position Воспитатель младшей группы
+					.staff-phone +7 903 225 97 76
+					.staff-mail maryrod@mail.ru
+				.staff-photo
+					img(src="images/staff-3.png", alt="")
+			.staff-item.d-flex
+				.staff-info.reverse
+					.staff-name Ветрова Людмила Альбертовна
+					.staff-position Воспитатель яслей
+					.staff-phone +7 999 045 66 84
+					.staff-mail veter92@mail.ru
+				.staff-photo
+					img(src="images/staff-4.png", alt="")
+			.staff-item.d-flex
+				.staff-info
+					.staff-name Колобова Ольга Дмитриевна
+					.staff-position Воспитатель дополнительных групп
+					.staff-phone +7 987 887 92 65
+					.staff-mail kolobovs88@mail.ru
+				.staff-photo
+					img(src="images/staff-5.png", alt="")
+			.staff-item.d-flex
+				.staff-info.reverse
+					.staff-name Белова Ксения Александровна
+					.staff-position Воспитатель старшей группы
+					.staff-phone +7 955 789 12 12
+					.staff-mail belovaaks@mail.ru
+				.staff-photo
+					img(src="images/staff-6.png", alt="")
+			.staff-item.d-flex
+				.staff-info
+					.staff-name Виноградова Алёна Викторовна
+					.staff-position Воспитатель средней группы
+					.staff-phone +7 951 325 36 69
+					.staff-mail vinogadova89@mail.ru
+				.staff-photo
+					img(src="images/staff-7.png", alt="")
+			.staff-item.d-flex
+				.staff-info.reverse
+					.staff-name Тисленко Александра Эдуардовна
+					.staff-position Врач-педиатр
+					.staff-phone +7 987 122 25 78
+					.staff-mail luntik556@mail.ru
+				.staff-photo
+					img(src="images/staff-8.png", alt="")
+
+		include blocks/footer
+		+scripts(["jquery.min.js", "glide.min.js", "main.js"]) 

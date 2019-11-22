@@ -1,0 +1,43 @@
+.staff-title
+    margin-top: 10%
+    margin-bottom: 8%
+    h1
+        text-align: center
+
+.staff-item
+    justify-content: space-between
+    align-content: center
+    
+    padding: 5% 0
+    &:not(:last-child)
+        border-bottom: 2px solid $green
+    .staff-info
+        padding: 2%
+        .staff-name
+            font-size: 200%
+        .staff-position
+            margin: 4% 0
+            font-size: 120%
+        .staff-phone
+            margin-top: 14%
+            margin-bottom: 2%
+    .staff-photo
+        padding: 2%
+
+.reverse
+    order: 2
+
+@media screen and ( max-width:  768px)
+    .staff-title
+        margin-top: 100%
+    .staff-item
+        flex-direction: column
+        .staff-info
+            display: flex
+            flex-direction: column
+            justify-content: center
+
+        .staff-photo
+            margin-top: 15%
+            display: flex
+            justify-content: center
