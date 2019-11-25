@@ -3,17 +3,18 @@
     margin-top: 10%
     margin-bottom: 5%
     .container
-        flex-wrap: wrap
+        // flex-wrap: wrap
         justify-content: space-around
         .story-text
+            flex-basis: 60%
             align-self: center
             padding: 30px
-            width: calc(40% - 60px)
+            // width: calc(40% - 60px)
             .story-quote
                 font-weight: 100
         .story-photo
             padding: 30px
-            width: calc(30% - 60px)
+            // width: calc(30% - 60px)
             img
                 width: 100%
                 height: auto
@@ -23,22 +24,25 @@
         flex-direction: column
     .about-title
         padding: 2%
-        font-size: 200%
+        font-size: 250%
     .about-text
+        font-size: 150%
         width: 70%
         padding: 2%
 
 .about-values
     margin-top: 10%
     .about-values_wrapper
-        flex-wrap: wrap
+        // flex-wrap: wrap
         justify-content: space-around
 
         .about-values__item
-            width: calc(30% - 40px)
+            // width: calc(30% - 40px)
             margin: 8% 20px
             flex-direction: column
             align-items: center
+            justify-content: space-between
+            .about__item__text
                 
             .about__item__header
                 font-weight: bold
