@@ -670,9 +670,11 @@ body {
 .smart-kid__col {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  width: 40%; }
 
 .top-section__text {
+  padding: 0 4%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -684,8 +686,9 @@ body {
         align-self: flex-start; }
 
 .smart-kid__img {
-  width: 70%;
-  height: auto; }
+  width: 100%;
+  height: auto;
+  display: block; }
 
 .our-groups h2 {
   text-align: center;
@@ -811,20 +814,24 @@ body {
   .top-section__text {
     font-size: 118%; }
   .smart-kid__col {
-    margin-top: 4%; }
+    margin-top: 4%;
+    width: 100%; }
     .smart-kid__col img {
       width: 90%;
       height: auto; }
   .mob-menu__img {
     width: 10%; }
   .top-section__text {
+    margin-top: 15%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
     .top-section__text h1 {
-      font-size: 200%; }
+      font-size: 200%;
+      text-align: center; }
     .top-section__text p {
-      font-size: 100%; }
+      font-size: 145%;
+      text-align: center; }
   .top-section__text .btn {
     display: none; }
   .top-section__text a {
