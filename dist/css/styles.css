@@ -220,9 +220,9 @@ footer {
 
 @media screen and (max-width: 768px) {
   .programms-info {
-    margin: 80% 0; }
+    margin: 100% 0 80% 0; }
     .programms-info p, .programms-info h1 {
-      font-size: 150%;
+      font-size: 210%;
       padding: 0 10%; }
   .programm-item {
     font-size: 160%;
@@ -477,7 +477,8 @@ footer {
 
 @media screen and (max-width: 768px) {
   .groups-title {
-    margin-top: 30%; }
+    margin-top: 30%;
+    font-size: 140%; }
   .groups-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -960,8 +961,7 @@ body {
     .story-text p {
       font-size: 150%; }
   .story-photo {
-    -ms-flex-item-align: center;
-        align-self: center; }
+    padding: 10%; }
     .story-photo img {
       width: 100%; }
   .story-section {
