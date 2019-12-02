@@ -973,7 +973,8 @@ body {
               flex-direction: column; }
   .about-staff {
     margin-top: 80%;
-    font-size: 200%; }
+    font-size: 200%;
+    text-align: center; }
   .about-info .container {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -995,7 +996,7 @@ body {
             align-items: center; }
   .partner__title {
     text-align: center;
-    margin-top: 60%; }
+    margin-top: 30%; }
   .about-staff .glide {
     margin-top: 40%; }
   .about-staff__title {
