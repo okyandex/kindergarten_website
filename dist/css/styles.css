@@ -660,8 +660,6 @@ body {
       color: #61C0BF; }
 
 .top-section__wrapper {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: 5%;
   -ms-flex-line-pack: center;
       align-content: center; }
@@ -841,6 +839,8 @@ body {
     margin: 4% 0;
     font-size: 120%; }
   .top-section__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-bottom: 14%; }
   .our-groups h2 {
     padding-top: 12%; }
