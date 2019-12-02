@@ -219,12 +219,15 @@ footer {
     padding: 7%; }
 
 @media screen and (max-width: 768px) {
+  .programms-section .container {
+    margin-bottom: 50%; }
   .programms-info {
     margin: 100% 0 80% 0; }
     .programms-info p, .programms-info h1 {
       font-size: 210%;
       padding: 0 10%; }
   .programm-item {
+    margin-bottom: 10%;
     font-size: 160%;
     padding-top: 10%;
     -webkit-box-orient: vertical;
@@ -410,6 +413,9 @@ footer {
   margin: 15% 0;
   text-align: center; }
 
+.groups-wrapper {
+  margin-bottom: 10%; }
+
 .groups__item {
   background-color: white; }
   .groups__item .groups__info {
@@ -483,7 +489,8 @@ footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin-bottom: 0; }
   .info__item {
     margin-bottom: 10%; }
   .groups__item {
@@ -491,8 +498,13 @@ footer {
   .excursion__block {
     width: 100%;
     font-size: 220%; }
+    .excursion__block input {
+      font-size: 50%;
+      width: 90%;
+      height: 120px; }
   .excursion__btn {
-    width: 50%; } }
+    margin-bottom: 10%;
+    border: 4px solid white; } }
 
 .glide {
   position: relative;
