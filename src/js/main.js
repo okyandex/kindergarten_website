@@ -42,3 +42,19 @@ $(document).ready(function() {
        
     })
 })
+
+$("#yasli-link").click(function() {
+    window.location = "groups.html#nursery";
+})
+
+$("#yasliplus-link").click(function() {
+    window.location = "groups.html#nurseryplus";
+})
+
+$("#kindergarten-link").click(function() {
+    window.location = "groups.html#kindergarten";
+})
+
+$("#preschool-link").click(function() {
+    window.location = "groups.html#preschool";
+})
