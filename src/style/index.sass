@@ -18,7 +18,7 @@ body
     padding: 0
     background-color: #f3f3f3
     // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    font-family: 'Gotham Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Gotham-Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 // Top-section
 .top-section
@@ -102,6 +102,7 @@ body
     margin: 15px
     flex-direction: column
     align-items: center
+    text-align: center
     .small-text
         padding: 0px 30px
     img
@@ -115,7 +116,7 @@ body
         margin-bottom: 10%
         padding-top: 10%
 .event__item
-    padding: 20px
+    padding: 20px 20px 70px 20px
     flex-direction: column
     text-align: center
     .event__title-row
@@ -294,7 +295,7 @@ body
          
 @media screen and ( max-width:  768px)
     body
-        font-size: 1.8rem
+        font-size: 1.5rem
     body.lock
         overflow: hidden
     .top-section
@@ -376,9 +377,10 @@ body
         .container
             flex-direction: column
             align-items: center
-            padding: 15% 0
+            padding: 10% 0
 
         .col-30
+            text-align: left
             // width: calc(100%)
             // text-align: center
     .mob-menu__img
@@ -460,7 +462,7 @@ body
 
 
     .story-section
-        margin-bottom: 80%
+        margin-bottom: 50%
 
     .story-text
         margin-top: 10%
@@ -475,7 +477,9 @@ body
     .story-photo
         padding: 10%
         img
-            width: 100%
+            display: block
+            width: 70%!important
+            margin: 0 auto
 
         // align-self: center
     .story-section
@@ -493,7 +497,7 @@ body
         .container
             align-items: center
             font-size: 150%
-            margin-bottom: 120%
+            margin-bottom: 60%
 
 
     .about-title
@@ -503,7 +507,10 @@ body
     .about-values__item
         // width: 50%
         padding: 0 10%
-        font-size: 200%
+        font-size: 140%
+        .about__item__icon
+            img
+                width: 120px!important
 
 
     .about-values_wrapper
