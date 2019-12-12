@@ -254,7 +254,8 @@ footer {
           align-self: center;
       padding: 30px; }
       .story-section .container .story-text .story-quote {
-        font-weight: 100; }
+        font-weight: 100;
+        font-size: 120%; }
     .story-section .container .story-photo {
       padding: 30px; }
       .story-section .container .story-photo img {
@@ -293,6 +294,8 @@ footer {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      .about-values .about-values_wrapper .about-values__item .about__item__text {
+        height: 200px; }
       .about-values .about-values_wrapper .about-values__item .about__item__header {
         font-weight: bold;
         font-size: 160%;
@@ -310,7 +313,12 @@ footer {
 .about-staff__title {
   margin-top: 10%;
   font-size: 200%;
-  margin-bottom: 4%; }
+  font-weight: 700;
+  margin-bottom: 4%;
+  text-align: center; }
+
+.about-staff__info {
+  text-align: center; }
 
 .about-staff__item {
   -webkit-box-orient: vertical;
@@ -367,7 +375,8 @@ footer {
   .staff-item .staff-info {
     padding: 2%; }
     .staff-item .staff-info .staff-name {
-      font-size: 200%; }
+      font-size: 200%;
+      font-weight: 400; }
     .staff-item .staff-info .staff-position {
       margin: 4% 0;
       font-size: 120%; }
@@ -430,6 +439,8 @@ footer {
     height: 420px; }
   .groups__item .groups__info {
     padding: 12% 8%; }
+    .groups__item .groups__info .__title {
+      font-weight: 700; }
 
 .info-col {
   background-color: #3BB0B8;
@@ -792,9 +803,12 @@ body {
     line-height: 0;
     margin-bottom: 5%; }
   .event__item .event__name {
-    font-size: 140%; }
+    font-size: 140%;
+    font-weight: 700;
+    margin-bottom: 8%; }
   .event__item .event__date {
-    font-size: 90%; }
+    font-size: 100%;
+    font-weight: 500; }
   .event__item .event__description {
     font-weight: 100; }
   .event__item .event__img {
@@ -822,7 +836,7 @@ body {
   .review__item .review__child {
     font-size: 90%; }
   .review__item .review__text {
-    font-weight: 100; }
+    font-weight: 400; }
   .review__item .review__img {
     margin-bottom: 2%; }
 
@@ -1025,7 +1039,8 @@ body {
     text-align: center; }
   .about-values__item {
     padding: 0 10%;
-    font-size: 140%; }
+    font-size: 140%;
+    margin-bottom: 40% !important; }
     .about-values__item .about__item__icon img {
       width: 120px !important; }
   .about-values_wrapper {
